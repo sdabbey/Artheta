@@ -518,7 +518,6 @@ nav.navbar .socials-action .extra .nav-trigger {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   z-index: 999;
-  font-family: "Quicksand";
 }
 .sidebar.active {
   right: 0;
@@ -558,17 +557,18 @@ nav.navbar .socials-action .extra .nav-trigger {
   border-radius: 3px;
   font-size: 15.75px;
   min-width: 10rem;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   border: 1px solid #298C3A;
   background: #298C3A;
-  font-size: 16.5px;
-  padding: 1rem;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 40px;
 }
 @media (min-width: 1200px) {
   .sidebar .nav_list .btn {
@@ -628,7 +628,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 25px;
+  gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

@@ -286,7 +286,7 @@ nav.navbar{
         justify-content: flex-start;
         transition:all 0.5s ease;
         z-index: 999;
-        font-family: "Quicksand";
+        
         &.active{
             right: 0;
         }
@@ -304,14 +304,14 @@ nav.navbar{
             .btn{
                 @include button-style($white, white);
                 min-width: 10rem;
-                font-weight: 700 !important;
+                font-weight: 600 !important;
                 border: 1px solid $primary-color;
                 background: $primary-color;
-                font-size: $base-font-size * 1.1;
-                padding: 1rem;
+                font-size: $base-font-size * 1;
+                padding:.5rem 1rem;
                 display: flex;
                 align-items: center;
-             
+                line-height: 40px;
                 img{
                     width: 30px;
                 }
@@ -351,7 +351,7 @@ nav.navbar{
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            gap: 25px;
+            gap: 20px;
             flex-wrap: wrap;
            
             a{
