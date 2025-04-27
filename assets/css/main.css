@@ -285,7 +285,7 @@ nav.navbar .socials-action .extra a.btn {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  line-height: 55px;
+  line-height: 50px;
   text-wrap: nowrap;
   border-radius: 3px;
   font-size: 15.75px;
@@ -385,6 +385,10 @@ nav.navbar .socials-action .extra .nav-trigger {
     width: -moz-fit-content;
     width: fit-content;
     padding: 0.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   nav.navbar .nav-logo img {
     width: 4.5rem;
@@ -548,7 +552,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  line-height: 55px;
+  line-height: 50px;
   text-wrap: nowrap;
   border-radius: 3px;
   font-size: 15.75px;
@@ -777,7 +781,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  line-height: 55px;
+  line-height: 50px;
   text-wrap: nowrap;
   border-radius: 3px;
   font-size: 15.75px;
@@ -831,7 +835,14 @@ nav.navbar .socials-action .extra .nav-trigger {
     width: 90%;
     padding: 1rem;
   }
+  .main .landingpage .text-content h1 {
+    font-size: 25.5px;
+  }
   .main .landingpage .text-content p {
     width: 100%;
+    font-size: 16.5px;
+  }
+  .main .landingpage .text-content a.btn {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.css.map */

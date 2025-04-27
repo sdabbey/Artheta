@@ -173,6 +173,7 @@ nav.navbar{
             
             width:fit-content;
             padding: .5rem;
+            flex-direction: row;
             img{
                 width: 4.5rem;
             }
@@ -523,9 +524,15 @@ nav.navbar{
             }
             .text-content{
                 width: 90%;                padding: 1rem;
-                
+                h1{
+                    font-size: $base-font-size * 1.7;
+                }
                 p{
                     width: 100%;
+                    font-size: $base-font-size * 1.1;
+                }
+                a.btn{
+                    font-size: $base-font-size * 1;
                 }
             }
         }
