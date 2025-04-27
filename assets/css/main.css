@@ -401,6 +401,9 @@ nav.navbar .socials-action .extra .nav-trigger {
     display: none;
   }
   nav.navbar .socials-action {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;

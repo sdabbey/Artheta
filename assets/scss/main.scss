@@ -36,6 +36,7 @@ nav.navbar{
             text-wrap: nowrap;
             letter-spacing: .03cm;
             margin: 0;
+
         }
     }
     .nav-content, .socials-action{
@@ -192,7 +193,7 @@ nav.navbar{
             
         }
         .socials-action{
-            
+            width: fit-content;
             justify-content: flex-end;
             li{
                 display: none;
