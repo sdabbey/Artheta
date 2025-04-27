@@ -177,9 +177,11 @@ nav.navbar{
             img{
                 width: 4.5rem;
             }
-            // h3{
-            //     display: none;
-            // }
+            h3{
+                font-size: $base-font-size * 1.4;
+                word-wrap: nowrap;
+                text-wrap: nowrap;
+            }
         }
         .nav-content li, .nav-content .btn{
             display: none;

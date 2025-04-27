@@ -389,6 +389,11 @@ nav.navbar .socials-action .extra .nav-trigger {
   nav.navbar .nav-logo img {
     width: 4.5rem;
   }
+  nav.navbar .nav-logo h3 {
+    font-size: 21px;
+    word-wrap: nowrap;
+    text-wrap: nowrap;
+  }
   nav.navbar .nav-content li, nav.navbar .nav-content .btn {
     display: none;
   }
