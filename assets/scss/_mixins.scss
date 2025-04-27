@@ -1,0 +1,78 @@
+// Mixin for responsive typography
+// @mixin responsive-font($size-mobile, $size-desktop) {
+//     font-size: $size-mobile;
+
+//     @media (min-width: $breakpoint-desktop) {
+//         font-size: $size-desktop;
+//     }
+// }
+
+// Mixin for a button style
+@mixin button-style($btn-bg-color, $text-color) {
+    padding:0 $padding-base * 1.5;
+    color: $text-color;
+    background-color: $btn-bg-color;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    line-height: 45px;
+    text-wrap: nowrap;
+    border-radius: 3px;
+    font-size: $base-font-size * 1.05;
+   
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: $base-font-size * 0.94;
+    }
+}
+
+
+// @mixin card-style{
+//     width: 100%; 
+//     height: 430px;
+//     position: relative;
+//     font-family: "Montserrat", sans-serif;
+//     img{
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+//     .content{
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+        
+//         bottom: 0;
+//         position: absolute;
+//         padding: $base-font-size * 1.5;
+//         gap: $base-font-size * 1.5;
+//         h4{
+//             font-size: $base-font-size * 1.56;
+//             font-weight: 600;
+//             color: $white;
+//             text-transform: uppercase;
+//             line-height: $base-font-size * 1.88;
+//         }
+//         .action-btn{
+//             @include button-style($white, $black);
+//         }
+//     }
+
+//     @media (min-width: $breakpoint-desktop) {
+//         width: 50%; 
+//         height: 650px;
+        
+        
+//         h4{
+//             font-size: $base-font-size * 1.69;
+//             line-height: $base-font-size * 2;
+//         }
+//         .content{
+//             padding: $base-font-size * 2.6;
+//             gap: $base-font-size * 2;
+//         }
+//     }
+// }
+
