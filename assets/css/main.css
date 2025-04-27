@@ -7,7 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-style: normal;
   font-optical-sizing: auto;
   background-color: white;
@@ -150,7 +150,7 @@ nav.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 72px;
+  height: 76px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: transparent;
@@ -162,6 +162,7 @@ nav.navbar {
 }
 nav.navbar .nav-logo {
   width: 20%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,15 +178,16 @@ nav.navbar .nav-logo {
           flex-direction: column;
 }
 nav.navbar .nav-logo img {
-  width: 2.5rem;
+  width: 2.6rem;
 }
 nav.navbar .nav-logo h3 {
-  font-size: 21.6px;
+  font-size: 25.5px;
   font-weight: 600;
   color: #000000;
   font-weight: bold;
   text-wrap: nowrap;
   letter-spacing: 0.03cm;
+  margin: 0;
 }
 nav.navbar .nav-content, nav.navbar .socials-action {
   width: 35%;
@@ -205,7 +207,7 @@ nav.navbar .nav-content li a, nav.navbar .socials-action li a {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
-  font-size: 13.2px;
+  font-size: 16.5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   letter-spacing: 0.03cm;
@@ -260,7 +262,7 @@ nav.navbar .socials-action .socials a:nth-child(even) i.bx:hover {
   color: #FFD628;
 }
 nav.navbar .socials-action .socials a i.bx {
-  font-size: 19.2px;
+  font-size: 24px;
   color: #000000;
 }
 nav.navbar .socials-action .extra {
@@ -283,10 +285,10 @@ nav.navbar .socials-action .extra a.btn {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  line-height: 45px;
+  line-height: 55px;
   text-wrap: nowrap;
   border-radius: 3px;
-  font-size: 12.6px;
+  font-size: 15.75px;
   min-width: 10rem;
   font-weight: 600 !important;
   border: 1px solid #298C3A;
@@ -303,7 +305,7 @@ nav.navbar .socials-action .extra a.btn {
 }
 @media (min-width: 1200px) {
   nav.navbar .socials-action .extra a.btn {
-    font-size: 11.28px;
+    font-size: 14.1px;
   }
 }
 nav.navbar .socials-action .extra a.btn:hover {
@@ -546,15 +548,15 @@ nav.navbar .socials-action .extra .nav-trigger {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  line-height: 45px;
+  line-height: 55px;
   text-wrap: nowrap;
   border-radius: 3px;
-  font-size: 12.6px;
+  font-size: 15.75px;
   min-width: 10rem;
   font-weight: 700 !important;
   border: 1px solid #298C3A;
   background: #298C3A;
-  font-size: 13.2px;
+  font-size: 16.5px;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,7 +567,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 @media (min-width: 1200px) {
   .sidebar .nav_list .btn {
-    font-size: 11.28px;
+    font-size: 14.1px;
   }
 }
 .sidebar .nav_list .btn img {
@@ -754,14 +756,14 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 .main .landingpage .text-content h1 {
   color: #ffffff;
-  font-size: 32.4px;
+  font-size: 40.5px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
 }
 .main .landingpage .text-content p {
   color: #ffffff;
-  font-size: 13.8px;
+  font-size: 17.25px;
   font-weight: 500;
   width: 70%;
   text-align: center;
@@ -775,10 +777,10 @@ nav.navbar .socials-action .extra .nav-trigger {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  line-height: 45px;
+  line-height: 55px;
   text-wrap: nowrap;
   border-radius: 3px;
-  font-size: 12.6px;
+  font-size: 15.75px;
   min-width: 10rem;
   padding: 0 20px;
   width: -webkit-fit-content;
@@ -798,14 +800,14 @@ nav.navbar .socials-action .extra .nav-trigger {
   border: 2px solid #298C3A;
   color: #ffffff;
   background: #298C3A;
-  font-size: 13.2px;
+  font-size: 19.5px;
   border-radius: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 @media (min-width: 1200px) {
   .main .landingpage .text-content a.btn {
-    font-size: 11.28px;
+    font-size: 14.1px;
   }
 }
 .main .landingpage .text-content a.btn:hover {
