@@ -172,10 +172,6 @@ nav.navbar .nav-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 nav.navbar .nav-logo img {
   width: 2.6rem;
@@ -832,7 +828,7 @@ nav.navbar .socials-action .extra .nav-trigger {
             transform: translateX(0);
   }
   .main .landingpage .text-content {
-    width: 90%;
+    width: 100%;
     padding: 1rem;
   }
   .main .landingpage .text-content h1 {

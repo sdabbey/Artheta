@@ -22,7 +22,7 @@ nav.navbar{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        
         img{
             width: 2.6rem;
             
@@ -523,7 +523,8 @@ nav.navbar{
                 transform: translateX(0);
             }
             .text-content{
-                width: 90%;                padding: 1rem;
+                width: 100%;                
+                padding: 1rem;
                 h1{
                     font-size: $base-font-size * 1.7;
                 }
