@@ -162,7 +162,6 @@ nav.navbar {
 }
 nav.navbar .nav-logo {
   width: 20%;
-  gap: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +171,10 @@ nav.navbar .nav-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 nav.navbar .nav-logo img {
   width: 2.5rem;
@@ -181,7 +184,6 @@ nav.navbar .nav-logo h3 {
   font-weight: 600;
   color: #000000;
   font-weight: bold;
-  font-family: "Termina Test Regular";
   text-wrap: nowrap;
   letter-spacing: 0.03cm;
 }
@@ -202,9 +204,8 @@ nav.navbar .nav-content li, nav.navbar .socials-action li {
 nav.navbar .nav-content li a, nav.navbar .socials-action li a {
   text-decoration: none;
   color: #000000;
-  font-weight: normal;
-  font-size: 12px;
-  font-family: "Satoshi Medium";
+  font-weight: 500;
+  font-size: 13.2px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   letter-spacing: 0.03cm;
@@ -259,7 +260,7 @@ nav.navbar .socials-action .socials a:nth-child(even) i.bx:hover {
   color: #FFD628;
 }
 nav.navbar .socials-action .socials a i.bx {
-  font-size: 18px;
+  font-size: 19.2px;
   color: #000000;
 }
 nav.navbar .socials-action .extra {
@@ -718,7 +719,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   z-index: 3;
   position: absolute;
 }
-.main .landingpage video {
+.main .landingpage video, .main .landingpage img {
   width: 100%;
   height: 550px;
   -o-object-fit: cover;
@@ -753,16 +754,16 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 .main .landingpage .text-content h1 {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 32.4px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .main .landingpage .text-content p {
   color: #ffffff;
-  font-size: 13.2px;
+  font-size: 13.8px;
   font-weight: 500;
-  width: 60%;
+  width: 70%;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -795,8 +796,8 @@ nav.navbar .socials-action .extra .nav-trigger {
   gap: 1rem;
   font-weight: 600 !important;
   border: 2px solid #298C3A;
-  color: #298C3A;
-  background: transparent;
+  color: #ffffff;
+  background: #298C3A;
   font-size: 13.2px;
   border-radius: 5px;
   -webkit-transition: 0.3s ease;
@@ -808,7 +809,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   }
 }
 .main .landingpage .text-content a.btn:hover {
-  background: #298C3A;
+  background: #187227;
   color: #ffffff;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
