@@ -424,7 +424,7 @@ nav.navbar{
         width: 100%;
         height: fit-content;
         box-sizing: border-box;
-
+        // margin: 1rem 1.2rem;
         position: relative;
         overflow:hidden;
         display: flex;
@@ -538,6 +538,71 @@ nav.navbar{
                 }
                 a.btn{
                     font-size: $base-font-size * 1;
+                }
+            }
+        }
+    }
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+        gap: 3rem;
+        .about{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            h2{
+                font-size: $base-font-size * 2;
+                font-weight: 700;
+                font-family: 'Termina Test Demi';
+            }
+            p{
+                font-size: $base-font-size * 1.1;
+            }
+        }
+        .more-about{
+            width: 100%;
+            display: flex;
+            padding: 2%;
+            gap: 2rem;
+            .vision, .philosophy{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1.5rem;
+                h2{
+                    font-size: $base-font-size * 2;
+                    font-weight: 700;
+                    font-family: 'Termina Test Demi';
+                }
+                p{
+                    font-size: $base-font-size * 1.1;
+                }
+            }
+            .vision h2{
+                color: $secondary-color
+            }
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            padding: 0;
+            gap: 1rem;
+            .about{
+                width: 100%;
+                padding: 1rem;
+            }
+            .more-about{
+                gap: 3rem;
+                flex-direction: column;
+                .vision,.philosophy{
+                    width: 100%;
                 }
             }
         }

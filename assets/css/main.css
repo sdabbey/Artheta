@@ -849,4 +849,98 @@ nav.navbar .socials-action .extra .nav-trigger {
   .main .landingpage .text-content a.btn {
     font-size: 15px;
   }
+}
+.main .about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3%;
+  gap: 3rem;
+}
+.main .about-section .about {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.main .about-section .about h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Termina Test Demi";
+}
+.main .about-section .about p {
+  font-size: 16.5px;
+}
+.main .about-section .more-about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  gap: 2rem;
+}
+.main .about-section .more-about .vision, .main .about-section .more-about .philosophy {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.main .about-section .more-about .vision h2, .main .about-section .more-about .philosophy h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Termina Test Demi";
+}
+.main .about-section .more-about .vision p, .main .about-section .more-about .philosophy p {
+  font-size: 16.5px;
+}
+.main .about-section .more-about .vision h2 {
+  color: #FFD628;
+}
+@media (max-width: 768px) {
+  .main .about-section {
+    padding: 0;
+    gap: 1rem;
+  }
+  .main .about-section .about {
+    width: 100%;
+    padding: 1rem;
+  }
+  .main .about-section .more-about {
+    gap: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .about-section .more-about .vision, .main .about-section .more-about .philosophy {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
