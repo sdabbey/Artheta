@@ -889,6 +889,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 .main .about-section .about p {
   font-size: 16.5px;
+  font-weight: normal;
 }
 .main .about-section .more-about {
   width: 100%;
@@ -920,6 +921,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 .main .about-section .more-about .vision p, .main .about-section .more-about .philosophy p {
   font-size: 16.5px;
+  font-weight: normal;
 }
 .main .about-section .more-about .vision h2 {
   color: #FFD628;
