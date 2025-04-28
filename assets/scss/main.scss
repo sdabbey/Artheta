@@ -565,6 +565,9 @@ nav.navbar{
                 font-size: $base-font-size * 1.1;
                 font-weight: normal;
             }
+            img{
+                width:12rem;
+            }
         }
         .more-about{
             width: 100%;
@@ -586,6 +589,9 @@ nav.navbar{
                 p{
                     font-size: $base-font-size * 1.1;
                     font-weight: normal;
+                }
+                img{
+                    width:12rem;
                 }
             }
             .vision h2{
