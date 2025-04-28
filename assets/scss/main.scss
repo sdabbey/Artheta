@@ -592,7 +592,7 @@ nav.navbar{
         }
 
         @media (max-width: $breakpoint-mobile) {
-            padding: 0;
+            padding: 1rem 0;
             gap: 1rem;
             .about{
                 width: 100%;

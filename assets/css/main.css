@@ -926,7 +926,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 @media (max-width: 768px) {
   .main .about-section {
-    padding: 0;
+    padding: 1rem 0;
     gap: 1rem;
   }
   .main .about-section .about {
