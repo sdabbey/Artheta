@@ -580,7 +580,7 @@ nav.navbar{
                 font-size: $base-font-size * 1.1;
                 font-weight: normal;
             }
-            img{
+            img.underline{
                 width:12rem;
             }
         }
@@ -613,7 +613,7 @@ nav.navbar{
                     font-size: $base-font-size * 1.1;
                     font-weight: normal;
                 }
-                img{
+                img.underline{
                     width:12rem;
                 }
             }
@@ -625,6 +625,9 @@ nav.navbar{
         @media (max-width: $breakpoint-mobile) {
             padding: 1rem .5rem;
             gap: 1rem;
+            img.underline{
+                width: 9rem !important;
+            }
             .about{
                 width: 100%;
                 padding: 1rem;

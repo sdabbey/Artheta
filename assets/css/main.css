@@ -918,7 +918,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   font-size: 16.5px;
   font-weight: normal;
 }
-.main .about-section .about img {
+.main .about-section .about img.underline {
   width: 12rem;
 }
 .main .about-section .more-about {
@@ -967,7 +967,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   font-size: 16.5px;
   font-weight: normal;
 }
-.main .about-section .more-about .vision img, .main .about-section .more-about .philosophy img {
+.main .about-section .more-about .vision img.underline, .main .about-section .more-about .philosophy img.underline {
   width: 12rem;
 }
 .main .about-section .more-about .vision h2 {
@@ -977,6 +977,9 @@ nav.navbar .socials-action .extra .nav-trigger {
   .main .about-section {
     padding: 1rem 0.5rem;
     gap: 1rem;
+  }
+  .main .about-section img.underline {
+    width: 9rem !important;
   }
   .main .about-section .about {
     width: 100%;
