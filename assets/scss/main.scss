@@ -841,6 +841,47 @@ nav.navbar{
             
         }
     }
+    .accreditations{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        //Find better background
+        background: #eeececb2;
+        .accreditation{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 1rem;
+            &:first-child img{
+                width: 8rem;
+                
+            }
+            span{
+                color: black;
+                font-weight: normal;
+            }
+            img{
+                width: 6rem;
+                
+            }
+        }
+
+        @media (max-width: $breakpoint-mobile){
+            
+            .accreditation{
+                
+                span{
+                    display: none;
+                }
+                img{
+                    width: 5rem;
+                }
+            }
+        }
+        
+    }
     .contact-section{
         width: 100%;
         display: flex;

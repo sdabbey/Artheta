@@ -1225,6 +1225,47 @@ nav.navbar .socials-action .extra .nav-trigger {
     height: 0.03rem;
   }
 }
+.main .accreditations {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: rgba(238, 236, 236, 0.6980392157);
+}
+.main .accreditations .accreditation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.main .accreditations .accreditation:first-child img {
+  width: 8rem;
+}
+.main .accreditations .accreditation span {
+  color: black;
+  font-weight: normal;
+}
+.main .accreditations .accreditation img {
+  width: 6rem;
+}
+@media (max-width: 768px) {
+  .main .accreditations .accreditation span {
+    display: none;
+  }
+  .main .accreditations .accreditation img {
+    width: 5rem;
+  }
+}
 .main .contact-section {
   width: 100%;
   display: -webkit-box;
