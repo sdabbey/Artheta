@@ -363,6 +363,9 @@ nav.navbar{
                 i.bx{
                     font-size: 1.6em;
                 }
+                img{
+                    width: 1.6em;
+                }
                 &:hover{
                     transform: translateY(-15%);
                     color: $primary-color;
@@ -382,8 +385,11 @@ nav.navbar{
     box-sizing: border-box;
     overflow-x: hidden;
     position: relative;
-    
-    padding: 1rem 1.2rem;
+   
+    // padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* Scrollbar styles */
     &::-webkit-scrollbar {
         width: 12px; /* Width of the scrollbar */
@@ -404,7 +410,7 @@ nav.navbar{
     }
 
     .overlay{
-        width: 100%;
+        width: 97%;
         height: 100%;
         
         display: none;
@@ -421,7 +427,7 @@ nav.navbar{
     }
     .landingpage{
         
-        width: 100%;
+        width: 97%;
         height: fit-content;
         box-sizing: border-box;
         // margin: 1rem 1.2rem;
@@ -519,7 +525,7 @@ nav.navbar{
 
 
         @media (max-width: $breakpoint-mobile) {
-            width: 100%;
+            width: 93%;
            
             
             video{
@@ -560,6 +566,15 @@ nav.navbar{
                 font-size: $base-font-size * 2;
                 font-weight: 700;
                 font-family: 'Termina Test Demi';
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 1rem;
+                color: black;
+                img{
+                    width: 3rem;
+
+                }
             }
             p{
                 font-size: $base-font-size * 1.1;
@@ -582,9 +597,17 @@ nav.navbar{
                 text-align: center;
                 gap: 1.5rem;
                 h2{
-                    font-size: $base-font-size * 2;
+                    font-size: $base-font-size * 1.4;
                     font-weight: 700;
                     font-family: 'Termina Test Demi';
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap: 1rem;;
+                    img{
+                        width: 2.5rem;
+
+                    }
                 }
                 p{
                     font-size: $base-font-size * 1.1;
@@ -600,7 +623,7 @@ nav.navbar{
         }
 
         @media (max-width: $breakpoint-mobile) {
-            padding: 1rem 0;
+            padding: 1rem .5rem;
             gap: 1rem;
             .about{
                 width: 100%;
@@ -613,6 +636,193 @@ nav.navbar{
                     width: 100%;
                 }
             }
+        }
+    }
+    .projects-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 3rem 1rem;
+        
+        h2{
+            font-size: $base-font-size * 2;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-family: 'Termina Test Demi';
+            color: black;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            span{
+                font-weight: 700;
+                color: $secondary-color;
+            }
+        }
+        .project-cards{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+            .card{
+                width: 90%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                padding: 2rem 1rem;
+                transition: all .4s ease;
+
+                &:hover{
+                    // transform: translateY(-5%);
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+                    transition: all .4s ease;
+                }
+                h3{
+                    font-size: $base-font-size * 1.5;
+                    font-weight: bold;
+                    color:black ;
+                    text-align:center ;
+                    text-transform: capitalize;
+                    font-family:'Termina Test Demi';
+                    
+                }
+                .tags{
+                    display: flex;
+                    gap: 4rem;
+                    
+                    // width: 55%;
+                    justify-content: space-around;
+                    span{
+                        font-weight: 500;
+                        color: rgba(0, 0, 0, 0.753);
+                        &:first-child {
+                            text-decoration:underline;
+                            text-underline-offset: .5rem;
+                            // color: $primary-color;
+                        }
+                        // &:nth-child(2) {
+                            
+                        //     color: $secondary-color;
+                        // }
+                        // &:nth-child(3) {
+                        //     // text-decoration:underline;
+                        //     // text-underline-offset: .5rem;
+                        //     // color: $primary-color;
+                        // }
+                    }
+                }
+                .layout{
+                    display: flex;
+                    padding: 3%;
+                    
+                    justify-content: space-evenly;
+                    .left{
+                        width: 45%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        // border-radius: 15px;
+                        // border-right: 1px solid black;
+                        p{
+                            font-size: $base-font-size * 2;
+                            font-weight: normal;
+                        }
+                        .action-btns{
+                            display: flex;
+                            gap: 1rem;
+                            align-items: center;
+                            padding: 1rem 0;
+                            a{
+                                color: black;
+                                font-weight: normal;
+                                text-underline-offset: .3rem;
+                                transition: all .4s ease;                                
+                                &:nth-child(2){
+                                    text-decoration: none;
+                                    background: black;
+                                    color: white;
+                                    border-radius: 20px 20px;
+                                    padding: .5rem 1rem;
+                                    &:hover{
+                                        background: rgba(0, 0, 0, 0.86);
+                                    }
+
+                                }
+                                &:first-child:hover{
+                                    color: rgba(0, 0, 0, 0.656);
+                                    
+                                }
+                            }
+                        }
+
+                    }
+                    .middle{
+                        background: rgba(0, 0, 0, 0.699);
+                        width: .05rem;
+                        
+                        display: flex;
+                        
+                    }
+                    .right{
+                        width: 45%;
+                        // border-radius: 15px;
+                        
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            border-radius: 15px;
+                        }
+
+                    }
+
+                }
+               
+            }
+        }
+        @media (max-width: $breakpoint-mobile) {
+
+            .project-cards{
+                .card{
+                    width: 100%;
+                    h3{
+                        font-size: $base-font-size * 1.3;
+                        
+                    }
+                    .tags{
+                        gap: .5rem;
+                        width: 100%;
+                        justify-content: space-between;
+                        span{
+                            font-size: $base-font-size * 0.7;
+                            word-wrap: nowrap;
+                        }
+                    }
+                    .layout{
+                        flex-direction: column-reverse;
+                        gap: 1rem;
+                        .left, .right{
+                            width: 100%;
+                        }
+                        .middle{
+                            width: 100%;
+                            height: .03rem;
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }

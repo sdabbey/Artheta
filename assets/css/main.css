@@ -644,6 +644,9 @@ nav.navbar .socials-action .extra .nav-trigger {
 .sidebar .socials a i.bx {
   font-size: 1.6em;
 }
+.sidebar .socials a img {
+  width: 1.6em;
+}
 .sidebar .socials a:hover {
   -webkit-transform: translateY(-15%);
           transform: translateY(-15%);
@@ -662,7 +665,16 @@ nav.navbar .socials-action .extra .nav-trigger {
           box-sizing: border-box;
   overflow-x: hidden;
   position: relative;
-  padding: 1rem 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Scrollbar styles */
 }
 .main::-webkit-scrollbar {
@@ -680,7 +692,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   background-color: #555; /* Darker color when hovering over the scrollbar */
 }
 .main .overlay {
-  width: 100%;
+  width: 97%;
   height: 100%;
   display: none;
   -webkit-box-orient: vertical;
@@ -699,7 +711,7 @@ nav.navbar .socials-action .extra .nav-trigger {
           backdrop-filter: blur(2px) !important;
 }
 .main .landingpage {
-  width: 100%;
+  width: 97%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -829,7 +841,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 @media (max-width: 768px) {
   .main .landingpage {
-    width: 100%;
+    width: 93%;
   }
   .main .landingpage video {
     -webkit-transform: translateX(0);
@@ -886,6 +898,21 @@ nav.navbar .socials-action .extra .nav-trigger {
   font-size: 30px;
   font-weight: 700;
   font-family: "Termina Test Demi";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: black;
+}
+.main .about-section .about h2 img {
+  width: 3rem;
 }
 .main .about-section .about p {
   font-size: 16.5px;
@@ -918,9 +945,23 @@ nav.navbar .socials-action .extra .nav-trigger {
   gap: 1.5rem;
 }
 .main .about-section .more-about .vision h2, .main .about-section .more-about .philosophy h2 {
-  font-size: 30px;
+  font-size: 21px;
   font-weight: 700;
   font-family: "Termina Test Demi";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.main .about-section .more-about .vision h2 img, .main .about-section .more-about .philosophy h2 img {
+  width: 2.5rem;
 }
 .main .about-section .more-about .vision p, .main .about-section .more-about .philosophy p {
   font-size: 16.5px;
@@ -934,7 +975,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 @media (max-width: 768px) {
   .main .about-section {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     gap: 1rem;
   }
   .main .about-section .about {
@@ -950,5 +991,214 @@ nav.navbar .socials-action .extra .nav-trigger {
   }
   .main .about-section .more-about .vision, .main .about-section .more-about .philosophy {
     width: 100%;
+  }
+}
+.main .projects-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 1rem;
+}
+.main .projects-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Termina Test Demi";
+  color: black;
+  text-align: center;
+}
+.main .projects-section p {
+  text-align: center;
+}
+.main .projects-section p span {
+  font-weight: 700;
+  color: #FFD628;
+}
+.main .projects-section .project-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.main .projects-section .project-cards .card {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.main .projects-section .project-cards .card:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.main .projects-section .project-cards .card h3 {
+  font-size: 22.5px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Termina Test Demi";
+}
+.main .projects-section .project-cards .card .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main .projects-section .project-cards .card .tags span {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.753);
+}
+.main .projects-section .project-cards .card .tags span:first-child {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.main .projects-section .project-cards .card .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.main .projects-section .project-cards .card .layout .left {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.main .projects-section .project-cards .card .layout .left p {
+  font-size: 30px;
+  font-weight: normal;
+}
+.main .projects-section .project-cards .card .layout .left .action-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+.main .projects-section .project-cards .card .layout .left .action-btns a {
+  color: black;
+  font-weight: normal;
+  text-underline-offset: 0.3rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.main .projects-section .project-cards .card .layout .left .action-btns a:nth-child(2) {
+  text-decoration: none;
+  background: black;
+  color: white;
+  border-radius: 20px 20px;
+  padding: 0.5rem 1rem;
+}
+.main .projects-section .project-cards .card .layout .left .action-btns a:nth-child(2):hover {
+  background: rgba(0, 0, 0, 0.86);
+}
+.main .projects-section .project-cards .card .layout .left .action-btns a:first-child:hover {
+  color: rgba(0, 0, 0, 0.656);
+}
+.main .projects-section .project-cards .card .layout .middle {
+  background: rgba(0, 0, 0, 0.699);
+  width: 0.05rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .projects-section .project-cards .card .layout .right {
+  width: 45%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+.main .projects-section .project-cards .card .layout .right img {
+  width: 100%;
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .main .projects-section .project-cards .card {
+    width: 100%;
+  }
+  .main .projects-section .project-cards .card h3 {
+    font-size: 19.5px;
+  }
+  .main .projects-section .project-cards .card .tags {
+    gap: 0.5rem;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .projects-section .project-cards .card .tags span {
+    font-size: 10.5px;
+    word-wrap: nowrap;
+  }
+  .main .projects-section .project-cards .card .layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .main .projects-section .project-cards .card .layout .left, .main .projects-section .project-cards .card .layout .right {
+    width: 100%;
+  }
+  .main .projects-section .project-cards .card .layout .middle {
+    width: 100%;
+    height: 0.03rem;
   }
 }/*# sourceMappingURL=main.css.map */
