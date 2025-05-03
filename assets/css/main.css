@@ -828,6 +828,10 @@ nav.navbar .socials-action .extra .nav-trigger {
   border-radius: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 @media (min-width: 1200px) {
   .main .landingpage .text-content a.btn {
@@ -841,7 +845,9 @@ nav.navbar .socials-action .extra .nav-trigger {
   transition: 0.3s ease;
 }
 .main .landingpage .text-content a.btn img {
-  width: 27px;
+  width: 1.5rem !important;
+  height: 1.5rem;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .main .landingpage {
