@@ -717,6 +717,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   height: fit-content;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -878,6 +879,8 @@ nav.navbar .socials-action .extra .nav-trigger {
           justify-content: center;
   padding: 3%;
   gap: 3rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .main .about-section .about {
   width: 60%;
@@ -985,6 +988,10 @@ nav.navbar .socials-action .extra .nav-trigger {
     width: 100%;
     padding: 1rem;
   }
+  .main .about-section .about h2 {
+    font-size: 26.25px;
+    text-align: center;
+  }
   .main .about-section .more-about {
     gap: 3rem;
     -webkit-box-orient: vertical;
@@ -1008,6 +1015,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding: 3rem 1rem;
 }
 .main .projects-section h2 {
@@ -1173,6 +1181,9 @@ nav.navbar .socials-action .extra .nav-trigger {
   border-radius: 15px;
 }
 @media (max-width: 768px) {
+  .main .projects-section h2 {
+    font-size: 26.25px;
+  }
   .main .projects-section .project-cards .card {
     width: 100%;
   }
@@ -1203,5 +1214,175 @@ nav.navbar .socials-action .extra .nav-trigger {
   .main .projects-section .project-cards .card .layout .middle {
     width: 100%;
     height: 0.03rem;
+  }
+}
+.main .contact-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.main .contact-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Termina Test Demi";
+  color: black;
+  text-align: center;
+}
+.main .contact-section p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 16.5px;
+}
+.main .contact-section .contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .contact-section .contact .contact-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.main .contact-section .contact .contact-form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+.main .contact-section .contact .contact-form form input, .main .contact-section .contact .contact-form form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #298C3A;
+  font-size: 15px;
+  font-weight: normal;
+  color: black;
+  background-color: transparent;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.main .contact-section .contact .contact-form form input::-webkit-input-placeholder, .main .contact-section .contact .contact-form form textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.02cm;
+}
+.main .contact-section .contact .contact-form form input::-moz-placeholder, .main .contact-section .contact .contact-form form textarea::-moz-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.02cm;
+}
+.main .contact-section .contact .contact-form form input:-ms-input-placeholder, .main .contact-section .contact .contact-form form textarea:-ms-input-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.02cm;
+}
+.main .contact-section .contact .contact-form form input::-ms-input-placeholder, .main .contact-section .contact .contact-form form textarea::-ms-input-placeholder {
+  font-size: 15px;
+  letter-spacing: 0.02cm;
+}
+.main .contact-section .contact .contact-form form input::placeholder, .main .contact-section .contact .contact-form form textarea::placeholder {
+  font-size: 15px;
+  letter-spacing: 0.02cm;
+}
+.main .contact-section .contact .contact-form form input:focus, .main .contact-section .contact .contact-form form textarea:focus {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  outline: 1px solid #298C3A;
+}
+.main .contact-section .contact .contact-form form button.btn {
+  padding: 0 15px;
+  color: white;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  text-wrap: nowrap;
+  border-radius: 3px;
+  font-size: 15.75px;
+  min-width: 8rem;
+  border: none;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  gap: 1rem;
+  font-weight: 600 !important;
+  border-radius: 5px;
+  background: #298C3A;
+  color: #ffffff;
+  font-size: 21px;
+}
+@media (min-width: 1200px) {
+  .main .contact-section .contact .contact-form form button.btn {
+    font-size: 14.1px;
+  }
+}
+.main .contact-section .contact .contact-form form button.btn img {
+  width: 1.5rem;
+}
+@media (max-width: 768px) {
+  .main .contact-section {
+    gap: 0.6rem;
+  }
+  .main .contact-section .contact .contact-form {
+    width: 100% !important;
+  }
+  .main .contact-section .contact .contact-form button.btn {
+    font-size: 15px !important;
   }
 }/*# sourceMappingURL=main.css.map */

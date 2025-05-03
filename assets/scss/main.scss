@@ -430,7 +430,7 @@ nav.navbar{
         width: 97%;
         height: fit-content;
         box-sizing: border-box;
-        // margin: 1rem 1.2rem;
+        margin-bottom: 2rem;
         position: relative;
         overflow:hidden;
         display: flex;
@@ -555,6 +555,8 @@ nav.navbar{
         justify-content: center;
         padding: 3%;
         gap: 3rem;
+        margin-bottom: 1rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
         .about{
             width: 60%;
             display: flex;
@@ -631,6 +633,10 @@ nav.navbar{
             .about{
                 width: 100%;
                 padding: 1rem;
+                h2{
+                    font-size: $base-font-size * 1.75;
+                    text-align: center;
+                }
             }
             .more-about{
                 gap: 3rem;
@@ -646,7 +652,7 @@ nav.navbar{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
         padding: 3rem 1rem;
         
         h2{
@@ -795,7 +801,9 @@ nav.navbar{
             }
         }
         @media (max-width: $breakpoint-mobile) {
-
+            h2{
+                font-size: $base-font-size * 1.75;
+            }
             .project-cards{
                 .card{
                     width: 100%;
@@ -826,6 +834,110 @@ nav.navbar{
                 }
             }
             
+        }
+    }
+    .contact-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        gap: 2rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        h2{
+            font-size: $base-font-size * 2;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-family: 'Termina Test Demi';
+            color: black;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-weight: normal;
+            font-size: $base-font-size * 1.1;
+        }
+        .contact{
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contact-form{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                padding: 1rem 0;
+                form{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                   
+                    input, textarea{
+                        width: 100%;
+                        padding: .8rem;
+                        border-radius: 5px;
+                        border: 1px solid $primary-color;
+                        font-size: $base-font-size;
+                        font-weight: normal;
+                        color: black;
+                        background-color: transparent;
+                        transition: .4s ease;
+                        &::placeholder{
+                            font-size: $base-font-size;
+                            letter-spacing: .02cm;
+                        }
+                        &:focus{
+                            transition: .4s ease;
+                            outline: 1px solid $primary-color;
+                            // border:2px solid $primary-color ;
+                            
+
+                        }
+                    }
+
+                    button.btn{
+                        @include button-style($white, white);
+                        min-width: 8rem;
+                        border: none;
+                        text-align: center;
+                        padding:.3rem .5rem;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-transform: capitalize;
+                        gap: 1rem;
+                        font-weight: 600 !important;
+                        border-radius: 5px;
+                        background:$primary-color ;
+                        color:$white ;
+                        font-size: $base-font-size * 1.4;
+                        img{
+                            width: 1.5rem;
+                        }
+                    }
+                }
+            }   
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            gap: .6rem;
+            .contact {
+                .contact-form{
+                    width: 100% !important;
+                    button.btn{
+                        font-size: $base-font-size !important;
+                    }
+                }
+            }
         }
     }
 }
