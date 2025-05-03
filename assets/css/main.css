@@ -261,6 +261,9 @@ nav.navbar .socials-action .socials a i.bx {
   font-size: 24px;
   color: #000000;
 }
+nav.navbar .socials-action .socials a img {
+  width: 25.5px;
+}
 nav.navbar .socials-action .extra {
   display: -webkit-box;
   display: -ms-flexbox;
