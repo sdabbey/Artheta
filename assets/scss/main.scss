@@ -2,6 +2,11 @@
 @import 'mixins';
 @import 'base';
 
+$success-hover: #218838;
+$success: #28a745;
+$white: #fff;
+$text-dark: #333;
+
 nav.navbar{
     width: 100%;
     display: flex;
@@ -53,8 +58,8 @@ nav.navbar{
             a{
                 text-decoration: none;
                 color: $font-color;
-                font-weight:500;
-                font-size: $base-font-size * 1.1;
+                font-weight:normal;
+                font-size: $base-font-size * 1.05;
                 // font-family: 'Satoshi Medium';
                 transition: .3s ease;
                 letter-spacing: .03cm;
@@ -381,12 +386,6 @@ nav.navbar{
         }
 
 }
-
-
-$success-hover: #218838;
-$success: #28a745;
-$white: #fff;
-$text-dark: #333;
 
 .quick-action {
   position: fixed;
@@ -892,6 +891,8 @@ $text-dark: #333;
                         p{
                             font-size: $base-font-size * 2;
                             font-weight: normal;
+                            // border: 1px solid red;
+                            text-align: start;
                         }
                         .action-btns{
                             display: flex;
@@ -1000,6 +1001,9 @@ $text-dark: #333;
                 width: 8rem;
                 
             }
+            &:last-child img{
+                width: 14rem;
+            }
             span{
                 color: rgba(0, 0, 0, 0.603);
                 font-weight: 500;
@@ -1022,9 +1026,16 @@ $text-dark: #333;
                    
                     
                 }
+                &:first-child img{
+                    width: 5.5rem;
+                }
+                
                 img{
-                    width: 5rem;
+                    width: 4.5rem;
                     
+                }
+                &:last-child img{
+                    width: 8.5rem;
                 }
             }
         }
@@ -1161,7 +1172,8 @@ $text-dark: #333;
                 align-items: center;
                 img{
                     width: 5rem;
-                    height: 5rem;
+                    
+                   
                 }
                 div{
                     display: flex;

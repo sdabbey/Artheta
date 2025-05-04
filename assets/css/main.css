@@ -202,8 +202,8 @@ nav.navbar .nav-content li, nav.navbar .socials-action li {
 nav.navbar .nav-content li a, nav.navbar .socials-action li a {
   text-decoration: none;
   color: #000000;
-  font-weight: 500;
-  font-size: 16.5px;
+  font-weight: normal;
+  font-size: 15.75px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   letter-spacing: 0.03cm;
@@ -279,7 +279,7 @@ nav.navbar .socials-action .extra {
 nav.navbar .socials-action .extra a.btn {
   padding: 0 15px;
   color: white;
-  background-color: #ffffff;
+  background-color: #fff;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 600;
@@ -553,7 +553,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 .sidebar .nav_list .btn {
   padding: 0 15px;
   color: white;
-  background-color: #ffffff;
+  background-color: #fff;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 600;
@@ -1281,6 +1281,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 .main .projects-section .project-cards .card .layout .left p {
   font-size: 30px;
   font-weight: normal;
+  text-align: start;
 }
 .main .projects-section .project-cards .card .layout .left .action-btns {
   display: -webkit-box;
@@ -1391,6 +1392,9 @@ nav.navbar .socials-action .extra .nav-trigger {
 .main .accreditations .accreditation:first-child img {
   width: 8rem;
 }
+.main .accreditations .accreditation:last-child img {
+  width: 14rem;
+}
 .main .accreditations .accreditation span {
   color: rgba(0, 0, 0, 0.603);
   font-weight: 500;
@@ -1405,8 +1409,14 @@ nav.navbar .socials-action .extra .nav-trigger {
   .main .accreditations .accreditation span {
     display: none;
   }
+  .main .accreditations .accreditation:first-child img {
+    width: 5.5rem;
+  }
   .main .accreditations .accreditation img {
-    width: 5rem;
+    width: 4.5rem;
+  }
+  .main .accreditations .accreditation:last-child img {
+    width: 8.5rem;
   }
 }
 .main .contact-section {
@@ -1621,7 +1631,6 @@ nav.navbar .socials-action .extra .nav-trigger {
 }
 .main .footer-section .logo-section .content img {
   width: 5rem;
-  height: 5rem;
 }
 .main .footer-section .logo-section .content div {
   display: -webkit-box;
