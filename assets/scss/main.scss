@@ -1002,14 +1002,16 @@ nav.navbar{
                 
             }
             &:last-child img{
-                width: 14rem;
+                &:last-child{
+                    width: 14rem;
+                }
             }
             span{
                 color: rgba(0, 0, 0, 0.603);
                 font-weight: 500;
             }
             img{
-                width: 6rem;
+                width: 10rem;
                 
             }
         }
@@ -1035,7 +1037,9 @@ nav.navbar{
                     
                 }
                 &:last-child img{
-                    width: 8.5rem;
+                    &:last-child{
+                        width: 8.5rem;
+                    }
                 }
             }
         }

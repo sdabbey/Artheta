@@ -1392,7 +1392,7 @@ nav.navbar .socials-action .extra .nav-trigger {
 .main .accreditations .accreditation:first-child img {
   width: 8rem;
 }
-.main .accreditations .accreditation:last-child img {
+.main .accreditations .accreditation:last-child img:last-child {
   width: 14rem;
 }
 .main .accreditations .accreditation span {
@@ -1400,7 +1400,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   font-weight: 500;
 }
 .main .accreditations .accreditation img {
-  width: 6rem;
+  width: 10rem;
 }
 @media (max-width: 768px) {
   .main .accreditations .accreditation {
@@ -1415,7 +1415,7 @@ nav.navbar .socials-action .extra .nav-trigger {
   .main .accreditations .accreditation img {
     width: 4.5rem;
   }
-  .main .accreditations .accreditation:last-child img {
+  .main .accreditations .accreditation:last-child img:last-child {
     width: 8.5rem;
   }
 }
