@@ -101,6 +101,21 @@
       
     </div>
 
+    <!-- Quick Action -->
+     <div class="quick-action" id="contactUs">
+        
+        <button class="contact-toggle" id="contactToggle">
+            <span class="contact-icon"><i class="bx bx-chat"></i></span>
+            <span class="close-icon">
+                <span class="bar top"></span>
+                <span class="bar bottom"></span>
+            </span>
+        </button>
+        <div class="contact-options">
+            <a target="_blank" href="https://wa.me/233552297387" class="contact-btn phone"><i class="bx bxl-whatsapp"></i> Chat</a>
+            <a target="_blank" href="mailto: arthetainc@gmail.com" class="contact-btn email"><i class="bx bx-envelope"></i> Email</a>
+        </div>
+     </div>
     <!-- Main Content -->
     <div class="main">
         <!-- Landing Page -->
@@ -183,7 +198,7 @@
                         </div>
                         <div class="middle"></div>
                         <div class="right">
-                            <img src="assets/images/busanga-pic3.png" alt="">
+                            <img src="assets/images/Busanga-bg.png" alt="">
                         </div>
                     </div>
 
@@ -199,7 +214,7 @@
                 
             </div>
             <div class="accreditation">
-                <span>Empowered by</span>
+                <span>&copy; 2025 | Powered by</span>
                 <img src="assets/images/GNET.png" alt="">
                 
             </div>
@@ -222,7 +237,68 @@
                
             </div>
         </div>
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="logo-section">
+                <span>&copy; 2025 | All Rights Reserved</span>
+                <div class="content">
+                    <img src="assets/images/logo.png" alt="">
+                    <div>
+                        <h3>ArTheta Inc.</h3>
+                        <p>Building sustainable, affordable and liveable communities across Africa</p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a target="_blank" href="mailto: arthetainc@gmail.com">Gmail</a>/
+                    <a target="_blank" href="https://wa.me/233552297387">WhatsApp</a>/            
+                    <a target="_blank" href="https://www.instagram.com/artheta.incorporated/">Instagram</a>/
+                    <a target="_blank" href="https://x.com/mcquanins?s=21">Twitter(X)</a>
+            
+                </div>
+            </div>
+            <div class="company-section">
+                <h4>Company</h4>
+                <ul>
+                    <li>-<a href="#about-section">About Us</a></li>
+                    <li>-<a href="#values-section">Our Values</a></li>
+                </ul>
+            </div>
+            <div class="service-section">
+                <h4>Projects & Service</h4>
+                <ul>
+                    <li>-<a href="#projects-section">Our Projects</a></li>
+                    <li>-<a href="#contact-section">Reach out to us</a></li>
+                </ul>
+            </div>
+            <div class="support-section">
+                <h4>Support</h4>
+                <ul>
+                    <li>-<a href="#">Support BusangaApp</a></li>
+                    
+                </ul>
+                <!-- <div class="misc">
+                    <img class="rounded" src="assets/images/busanga-icon1.jpeg" alt="">
+                    <img class="text" src="assets/images/Busanga-text.jpeg" alt="">
+                </div> -->
+                <div class="more">
+                    <span>Our Partners:</span>    
+                    <div class="list">
+                        <img src="assets/images/tarantulla2.png" alt="">
+                        <img src="assets/images/GNET.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="assets/js/main.js"></script>
+    <script>
+        const contactUs = document.getElementById("contactUs");
+        const contactToggle = document.getElementById("contactToggle");
+      
+        contactToggle.addEventListener("click", () => {
+          contactUs.classList.toggle("open");
+        });
+    </script>
+      
 </body>
 </html>

@@ -382,6 +382,147 @@ nav.navbar{
 
 }
 
+
+$success-hover: #218838;
+$success: #28a745;
+$white: #fff;
+$text-dark: #333;
+
+.quick-action {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+
+  &.open {
+    .contact-toggle {
+      .contact-icon {
+        opacity: 0;
+        display: none;
+        transform: scale(0.8);
+      }
+
+      .close-icon {
+        display: flex;
+        transition: .4s ease;
+        span.top {
+          transform: rotate(45deg) translate(4px, 4px);
+        }
+
+        span.bottom {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+      }
+    }
+
+    .contact-options {
+      opacity: 1;
+      transform: translateY(-10px);
+      pointer-events: auto;
+    }
+  }
+
+  .contact-toggle {
+    background-color: $secondary-color;
+    color: $white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .contact-icon {
+      transition: all 0.3s ease;
+      display: flex;
+      i.bx{
+        font-size: $base-font-size * 2;
+      }
+    }
+
+    .close-icon {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      display: none;
+      transition: all .3s ease;
+      .bar {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+      }
+
+      .top {
+        top: 6px;
+      }
+
+      .bottom {
+        bottom: 6px;
+      }
+    }
+  }
+
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+  }
+
+  .contact-btn {
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    white-space: nowrap;
+
+    i.bx{
+        font-size: $base-font-size * 1.5;
+    }
+    &.phone {
+      background-color: $success;
+      color: $white;
+
+      &:hover {
+        background-color: $success-hover;
+      }
+    }
+
+    &.email {
+      background-color: $black;
+      color: $white;
+
+      &:hover {
+        background-color: rgb(12, 12, 12);
+      }
+    }
+
+    
+  }
+}
+
+
+
 .main{
     width: 100%;
     height: fit-content;
@@ -851,6 +992,7 @@ nav.navbar{
         background: #eeececb2;
         .accreditation{
             display: flex;
+            // flex-direction: column;
             align-items: center;
             gap: 1rem;
             padding: 0 1rem;
@@ -859,8 +1001,8 @@ nav.navbar{
                 
             }
             span{
-                color: black;
-                font-weight: normal;
+                color: rgba(0, 0, 0, 0.603);
+                font-weight: 500;
             }
             img{
                 width: 6rem;
@@ -872,11 +1014,17 @@ nav.navbar{
             
             .accreditation{
                 
+                gap: .5rem;
+                
+                
                 span{
                     display: none;
+                   
+                    
                 }
                 img{
                     width: 5rem;
+                    
                 }
             }
         }
@@ -983,6 +1131,150 @@ nav.navbar{
                         font-size: $base-font-size !important;
                     }
                 }
+            }
+        }
+    }
+    .footer-section{
+        width: 98%;
+        display: flex;
+        border-radius: 15px;
+        justify-content: space-between;
+        padding: 3rem 1rem;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        // border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.084);
+        .logo-section{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            
+            span{
+                color: rgba(0, 0, 0, 0.6);
+                font-weight: 500;
+                font-size: $base-font-size * 0.8;
+            }
+            .content{
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    h3{
+                        font-size: $base-font-size * 1.5;
+                        font-weight: 600;
+                        font-family: 'Termina Test Demi';
+                        color: black;
+                    }
+                    p{
+                        font-size: $base-font-size ;
+                        font-weight: normal;
+                        color: rgba(0, 0, 0, 0.568);
+                    }
+                }
+            }
+            .socials{
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                margin-top: 2rem;
+                a{
+                    color: rgba(0, 0, 0, 0.568);
+                    text-underline-offset: .2rem;
+                    text-decoration: none;
+                    transition:.3s ease;
+                    font-size: $base-font-size * 0.9;
+                    font-weight: 500;
+                    &:hover{
+                        transition: .3s ease;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .company-section,.service-section, .support-section{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            h4{
+                color: black;
+                font-size: $base-font-size * 1.1;
+                font-weight: 600;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                li{
+                    display: flex;
+                    gap: .5rem;
+                    a{
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.87);
+                        font-weight: 500;
+                        text-underline-offset: .2rem;
+                        &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: #187227;
+                        }
+                    }
+                }
+            }
+        }
+        .support-section{
+
+            box-sizing: border-box;
+            width: 20%;
+            .misc{
+                width: 100%;
+                display: flex;
+                box-sizing: border-box;
+                img.rounded{
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                }
+                img.text{
+                    width: 60%;
+                    box-sizing: border-box;
+                    
+                }
+            }
+            .more{
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+                span{
+                    font-weight: 500;
+                }
+                .list{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 2rem;
+                    img{
+                        width: 4rem; 
+                                   
+                        &:first-child{
+                            width: 8rem;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: $breakpoint-mobile){
+            flex-direction: column;
+            gap: 2rem;
+            .logo-section, .company-section,.service-section,.support-section{
+                width: 100%;
             }
         }
     }
