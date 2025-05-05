@@ -48,3 +48,35 @@ function smoothScrollTo(targetElement, duration = 800) {
       if (targetElement) smoothScrollTo(targetElement, 1000); // Adjust duration in milliseconds
     });
   });
+
+
+  //Send Mail
+document.getElementById('contact-form').addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const message = document.getElementById('message').value;
+  const email = document.getElementById('email').value;
+
+  try {
+      const response = await fetch('/api/send_email', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, email, message }),
+      });
+
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+
+      const result = await response.json();
+      alert(result.message);
+      document.getElementById('contact-form').reset(); // Reset the form after successful submission
+
+  } catch (error) {
+      console.error('Error:', error);
+      alert('There was a problem with the signup. Please try again later.');
+  }
+});
