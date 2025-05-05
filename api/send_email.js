@@ -19,8 +19,8 @@ export default async function handler(req, res) {
         // Set up email data
         const mailOptions = {
             from: email,
-            // to: 'arthetainc@gmail.com',
-            to: 'samueldarko557@gmail.com',
+            to: 'arthetainc@gmail.com',
+            // to: 'samueldarko557@gmail.com',
             subject: 'User Inquiry',
             text: `You have a new message from ${username} <${email}>:\n\n${message}`,
             html: `
