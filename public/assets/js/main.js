@@ -77,6 +77,6 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
 
   } catch (error) {
       console.error('Error:', error);
-      alert('There was a problem sending your message. Please try again later.');
+      alert('There was a problem sending your message. Please try again!');
   }
 });
