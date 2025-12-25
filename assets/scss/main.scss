@@ -58,11 +58,11 @@ nav.navbar{
             a{
                 text-decoration: none;
                 color: $font-color;
-                font-weight:normal;
-                font-size: $base-font-size * 1.05;
+                font-weight:400;
+                font-size: $base-font-size * 1.03;
                 // font-family: 'Satoshi Medium';
                 transition: .3s ease;
-                letter-spacing: .03cm;
+                letter-spacing: .02cm;
                 text-wrap: nowrap;
                 &:hover{
                     transition: .3s ease;
@@ -81,6 +81,10 @@ nav.navbar{
         flex-direction: row;
         align-items: center;
         position: relative;
+       
+        justify-content: flex-end;
+        gap: 2rem;
+        padding-right: .8rem;
         .socials{
             
             width:fit-content;
@@ -88,8 +92,8 @@ nav.navbar{
             align-items: center;
             justify-content: center;     
             gap: 1rem;
-            position: absolute;
-            right: 2%;
+            // position: absolute;
+            // right: 2%;
 
             
             a{
@@ -112,7 +116,9 @@ nav.navbar{
             }
         }
         .extra{
-            display: flex;
+            
+            // display: flex;
+            display: none;
             align-items: center;
             justify-content: flex-end;
             width: 30%;
@@ -726,6 +732,7 @@ nav.navbar{
             p{
                 font-size: $base-font-size * 1.1;
                 font-weight: normal;
+                
             }
             img.underline{
                 width:12rem;
@@ -800,6 +807,7 @@ nav.navbar{
         border-top: 1px solid rgba(0, 0, 0, 0.05);
         padding: 3rem 1rem;
         
+        gap: 1rem;
         h2{
             font-size: $base-font-size * 2;
             font-weight: 700;
@@ -810,12 +818,41 @@ nav.navbar{
         }
         p{
             text-align: center;
+            font-size: $base-font-size * 1.1;
             span{
-                font-weight: 700;
-                color: $secondary-color;
+                font-weight: 500;
+                opacity: .8;
             }
         }
-        .project-cards{
+        p.info{
+            font-size: $base-font-size * .9;
+            font-weight: 500;
+            opacity: .7;
+        }
+        .project-tags{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            flex-wrap: wrap;
+            span{
+                font-weight: 400;
+                text-wrap: nowrap;
+                padding: .5rem 1rem;
+                // border: 1px solid black;
+                // border-radius: 20px 20px;
+                // min-width: 12rem;
+                text-align: center;
+                cursor: pointer;
+                &.active{
+                    color: $primary-color;
+                    border-color: $primary-color;
+                    text-decoration:underline;
+                    text-underline-offset: .5rem;
+                }
+            }
+        }
+        .project-cards-container{
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -824,7 +861,9 @@ nav.navbar{
             gap: 2rem;
             flex-wrap: wrap;
             padding: 2rem 0;
-            .card{
+            
+
+            .project-card{
                 width: 90%;
                 height: fit-content;
                 display: flex;
@@ -896,7 +935,7 @@ nav.navbar{
                         }
                         .action-btns{
                             display: flex;
-                            gap: 1rem;
+                            gap: 1.2rem;
                             align-items: center;
                             padding: 1rem 0;
                             a{
@@ -951,8 +990,8 @@ nav.navbar{
             h2{
                 font-size: $base-font-size * 1.75;
             }
-            .project-cards{
-                .card{
+            .project-cards-container{
+                .project-card{
                     width: 100%;
                     h3{
                         font-size: $base-font-size * 1.3;

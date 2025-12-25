@@ -80,3 +80,26 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
       alert('There was a problem sending your message. Please try again!');
   }
 });
+
+// Project Tag Toggling
+
+const tags = document.querySelectorAll(".project-tags span")
+const cards = document.querySelectorAll(".project-cards-container .project-card")
+
+tags.forEach(tag => {
+  tag.addEventListener("click", () => {
+    tags.forEach(t => t.classList.remove("active"))
+    tag.classList.add("active")
+
+    const selectedCategory = tag.textContent.trim()
+
+    cards.forEach(card => {
+      const cardCategory = card.dataset.category;
+
+      card.style.display =
+        cardCategory === selectedCategory ? "flex" : "none";
+    })
+  })
+})
+
+document.querySelector(".project-tags span.active")?.click();
